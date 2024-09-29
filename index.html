@@ -3,30 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmmsXt Aviation Insights</title>
+    <title>EmmsXt | Aviation & Music</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to EmmsXt</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Aviation Blog</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <div class="logo">EmmsXt</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aviation">Aviation</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="hero">
+            <h1>Welcome to EmmsXt</h1>
+            <p>A hub for Aviation & Music Excellence</p>
+            <a href="#aviation" class="btn">Explore More</a>
+        </div>
     </header>
 
-    <section>
-        <h2>Combining Passion and Expertise in Aviation</h2>
-        <p>Join us on a journey through the world of aviation, where precision meets progress.</p>
-    </section>
+    <main>
+        <section id="aviation" class="section aviation">
+            <h2>Aviation Insights</h2>
+            <p>Sharing expertise in Aeronautical Information Management and aviation safety.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>NOTAM Services</h3>
+                    <p>Precise and up-to-date aeronautical notices.</p>
+                </div>
+                <div class="card">
+                    <h3>Flight Planning</h3>
+                    <p>Supporting flight operations with accurate data.</p>
+                </div>
+                <div class="card">
+                    <h3>Data Management</h3>
+                    <p>Ensuring compliance with ICAO standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" class="section music">
+            <h2>Music Production</h2>
+            <p>Crafting soundscapes, mixing tracks, and directing music performances.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Music Direction</h3>
+                    <p>Guiding artistic performances and production.</p>
+                </div>
+                <div class="card">
+                    <h3>Mixing & Mastering</h3>
+                    <p>Enhancing audio quality with precision.</p>
+                </div>
+                <div class="card">
+                    <h3>Sound Engineering</h3>
+                    <p>Transforming raw tracks into polished productions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <h2>About EmmsXt</h2>
+            <p>EmmsXt is the intersection of two passions: aviation and music. With years of experience as an Aeronautical Information Management Officer and music producer, we bring precision, creativity, and excellence to both fields.</p>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contact Us</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 EmmsXt Aviation Insights</p>
+        <p>&copy; 2024 EmmsXt Aviation & Music</p>
     </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>
