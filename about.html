@@ -3,30 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | EmmsXt</title>
+    <title>About | EmmsXt</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>About EmmsXt</h1>
         <nav>
-            <ul>
+            <div class="logo">EmmsXt</div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Aviation Blog</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="hero hero-small">
+            <h1>About EmmsXt</h1>
+            <p>Your Go-To for Aviation and Music Excellence</p>
+        </div>
     </header>
 
-    <section>
-        <h2>Who We Are</h2>
-        <p>EmmsXt is powered by a passion for aviation and a commitment to maintaining aeronautical data integrity...</p>
-    </section>
+    <main>
+        <section id="about" class="section about">
+            <h2>Our Story</h2>
+            <p>With a passion for both aviation and music, EmmsXt brings together the best of both worlds, offering unparalleled services in both fields.</p>
+
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="EmmsXt Founder">
+                </div>
+
+                <div class="about-content">
+                    <h3>Who We Are</h3>
+                    <p>EmmsXt is the brand created by a multi-talented professional with deep roots in both aviation and music. Having worked as an Aeronautical Information Management Officer (AIMO) at the Uganda Civil Aviation Authority (UCAA) since 2023, we ensure accurate, timely data management for safe air travel. Alongside a career in aviation, EmmsXt is also a music director, mix engineer, and producer with years of experience bringing the best out of every musical project.</p>
+
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to merge the worlds of aviation safety and musical creativity, providing reliable, top-tier services in both fields. Whether you're looking for expert aeronautical data management or high-quality music production, we have the skills and experience to exceed expectations.</p>
+
+                    <h3>Core Values</h3>
+                    <ul>
+                        <li><strong>Excellence:</strong> Always striving for perfection in both aviation and music.</li>
+                        <li><strong>Passion:</strong> A love for the fields we work in drives us to deliver the best.</li>
+                        <li><strong>Collaboration:</strong> Working together with clients to achieve remarkable results.</li>
+                        <li><strong>Safety:</strong> Ensuring that all aviation services meet the highest safety standards.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 EmmsXt Aviation Insights</p>
+        <p>&copy; 2024 EmmsXt Aviation & Music</p>
     </footer>
 </body>
 </html>
