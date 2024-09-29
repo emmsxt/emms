@@ -3,32 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviation Blog | EmmsXt</title>
+    <title>Blog | EmmsXt</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Aviation Blog</h1>
         <nav>
-            <ul>
+            <div class="logo">EmmsXt</div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Aviation Blog</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="hero hero-small">
+            <h1>Our Blog</h1>
+            <p>Insights into Aviation and Music</p>
+        </div>
     </header>
 
-    <section>
-        <article>
-            <h2>The Role of Aeronautical Information in Aviation Safety</h2>
-            <p>A comprehensive guide to the importance of data management in aviation...</p>
-        </article>
-    </section>
+    <main>
+        <section id="blog" class="section blog">
+            <h2>Latest Articles</h2>
+            <div class="blog-container">
+                <article class="blog-post">
+                    <img src="images/blog1.jpg" alt="Aviation Insights">
+                    <div class="blog-content">
+                        <h3>Aviation Data Management: Best Practices</h3>
+                        <p>Discover the top techniques for efficient aeronautical data management and how they contribute to flight safety.</p>
+                        <a href="post1.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <img src="images/blog2.jpg" alt="Music Production Tips">
+                    <div class="blog-content">
+                        <h3>Music Production Tips for Beginners</h3>
+                        <p>Explore our essential tips for getting started in music production, from arranging to mixing like a pro.</p>
+                        <a href="post2.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <img src="images/blog3.jpg" alt="Flight Planning Support">
+                    <div class="blog-content">
+                        <h3>Effective Flight Planning: A Comprehensive Guide</h3>
+                        <p>Learn the critical elements of flight planning that ensure safety and operational success in the aviation industry.</p>
+                        <a href="post3.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <img src="images/blog4.jpg" alt="Mixing and Mastering">
+                    <div class="blog-content">
+                        <h3>Mixing and Mastering for Optimal Sound Quality</h3>
+                        <p>Understand the importance of mixing and mastering to produce professional-quality tracks.</p>
+                        <a href="post4.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 EmmsXt Aviation Insights</p>
+        <p>&copy; 2024 EmmsXt Aviation & Music</p>
     </footer>
 </body>
 </html>
